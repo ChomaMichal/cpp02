@@ -1,14 +1,9 @@
 #include "Fixed.hpp"
 
 int	main(){
-	Fixed i;
-
-	std::cout << i.getRawBits() << std::endl;
-	i.setRawBits(87);
-	std::cout << i.getRawBits() << std::endl;
-	Fixed j(i);
-	std::cout << j.getRawBits() << std::endl;
-	Fixed k;
-	k = i;
-	std::cout << k.getRawBits() << std::endl;
+	Fixed i(float(7.25));
+	std::cout << i << std::endl;
+	std::cout << i.toInt() << std::endl;
+	Fixed j(25);
+	std::cout << j << std::endl;
 }

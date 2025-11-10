@@ -40,4 +40,7 @@ float	Fixed::toFloat(void){
 	return (float(this->bits) / float(1 << this->fra));
 }
 
-std::stra
+std::ostream& operator<<(std::ostream&os, Fixed fx)
+{
+	return (os << fx.toFloat());
+}
