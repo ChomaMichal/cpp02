@@ -16,11 +16,11 @@ $(NAME): $(OBJ) $(HFILES)
 	$(CC) $(CFLAGS)  $(OBJ) -o $(NAME)
 
 
-%.o : %.c
+%.o : %.cpp
 	$(CC) $(CFLAGS) -c -O  $< -o $@
 	
 clean :
-	rm -f $(OBJ) $(BOBJ)
+	rm -f $(OBJ)
 
 fclean : clean
 	rm -f $(NAME)
