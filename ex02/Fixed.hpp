@@ -9,7 +9,7 @@ class Fixed{
 		Fixed(Fixed &org);
 		Fixed(const int org);
 		Fixed(const float org);
-		void	operator=(Fixed &org);
+		Fixed	&operator=(const Fixed &org);
 		bool	operator<(Fixed &org);
 		bool	operator<(const Fixed &org) const;
 		bool	operator>(Fixed &org);

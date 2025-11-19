@@ -20,8 +20,9 @@ Fixed::Fixed(const float org){
 	this->bits = static_cast<int>(org * (1 << this->fra));
 }
 
-void	Fixed::operator=(Fixed &org){
+Fixed	&Fixed::operator=(const Fixed &org){
 	this->bits = org.bits;
+	return (*this);
 }
 
 bool	Fixed::operator<(const Fixed &org)const{
